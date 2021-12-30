@@ -1,5 +1,5 @@
 public class CombinationSumIV {
-    public static int combinationSum4(int[] nums, int target) {
+    public static int combinationSum(int[] nums, int target) {
         int[] comb = new int[target + 1];
         comb[0] = 1;
         for (int i = 1; i <= target; i++) {
@@ -9,6 +9,7 @@ public class CombinationSumIV {
                 }
             }
         }
+
         return comb[target];
     }
 
@@ -16,6 +17,6 @@ public class CombinationSumIV {
 //        System.out.println(combinationSum4());
         int[] nums = {1, 2, 3};
         int target = 4;
-        System.out.println(combinationSum4(nums, target));
+        System.out.println(combinationSum(nums, target));
     }
 }
